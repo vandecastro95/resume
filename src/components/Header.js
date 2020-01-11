@@ -4,10 +4,10 @@ import avatar from '../assets/me.jpg';
 
 const useStyles = makeStyles({
     root: {
-        background: '#f0f0f0',
-        minHeight: '80px',
+        minHeight: '10vh',
         width: '100%',
-        marginTop: '0'
+        marginTop: '0',
+        backgroundColor: '#172021'
     },
     avatarContainer: {
         maxWidth: '900px',
@@ -25,13 +25,19 @@ const useStyles = makeStyles({
         marginTop: '20px'
     },
     nav: {
+        color: '#ffffff',
+        fontWeight: '400',
         textTransform: 'capitalize',
+        letterSpacing: '0px',
+        lineHeight: '1px',
         fontSize: '15px',
         transition: 'all 0.5s',
         margin: '0 20px',
         '&:hover': {
+            // color: '#DF3C3A',
+            // textShadow: '2px 2px 0px #EFAE3D, 4px 4px 0px #EBF952',
             background: 'none',
-            color: '#709AB7'
+            textDecoration: 'underline'
         }
     }
 })
@@ -41,7 +47,7 @@ const Header = () => {
     const classes = useStyles()
 
     return (
-    <Paper square elevation={0} className={classes.root}>
+    <Paper square elevation={10} className={classes.root}>
         <div className={classes.avatarContainer}>
                 <Avatar 
                     alt='Van De Castro'

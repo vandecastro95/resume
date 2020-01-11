@@ -7,8 +7,10 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
   const useStyles = makeStyles({
     root: {
         backgroundColor: 'transparent',
+        zIndex: '99999',
         border: 'none',
         width: '100%',
+        maxWidth: '900px',
         margin: '0 auto',
         ['@media (max-width:1024px)']: { // eslint-disable-line no-useless-computed-key
             width: '100%',
@@ -19,9 +21,10 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
         },
     },
     imageContainer: {
-      overflow: 'hidden',
+      overflow: 'visible',
       position: 'relative',
       backgroundColor: 'transparent',
+      width: '100%',
       ['@media (min-width:1025px)']: { // eslint-disable-line no-useless-computed-key
         marginTop: '50px',
       },
@@ -39,7 +42,7 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
       transition: 'all .3s ease-in-out',
 
       '&:hover': {
-        transform: 'translate3d(0px, 0px, 2px) scale(1, 1)',
+        transform: 'translate3d(0px, 0px, 2px) scale(1.2, 1.2)',
      },
     },
     imagePosWrapperRight: {
@@ -132,6 +135,10 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
         zIndex: '20',
         textAlign: 'left',
 
+        '&:hover': {
+          backgroundColor: 'white'
+       },
+
         ['@media (max-width:1024px)']: { // eslint-disable-line no-useless-computed-key
             right: '0',
             padding: '40px 30px 20px 30px',
@@ -184,6 +191,8 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
   
   const classes = useStyles();
 
+  // const imageSrc = require(image)
+
   return (
     <Box className={classes.root}>
             <Box square={true} marginTop={4} className={classes.imageContainer}>
@@ -194,6 +203,7 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
                     </Box>
                   </Box>
               </Box>
+              {console.log(image)}
               <Paper elevation={10} square={true} className={right ? classes.textBoxPosWrapper : classes.textBoxPosWrapperLeft}>
                 <Box>
                     <p className={classes.mainText}>{mainText}</p>
