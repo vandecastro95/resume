@@ -3,6 +3,7 @@
   /* background: #F9FBFB; */
   min-height: 100vh;
   background: #ffffff;
+  overflow-y: hidden;
   font-family: 'Lato', sans-serif;
 }
 

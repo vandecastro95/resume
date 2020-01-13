@@ -51,10 +51,10 @@ const Portfolio = () => {
 
                     <ImageWithOverlay 
                         image={`${process.env.PUBLIC_URL}/assets/benTo.jpg`}
-                        mainText={"ProxyStrike"}
-                        header={"Web Development"}
-                        subtitle={`Front End Development with HTML, and CSS`}
-                        github={"Github"}
+                        mainText={"Bento"}
+                        header={"Lunch Box Marketplace App"}
+                        subtitle={`Front End Development with React.js, and Material UI`}
+                        buttonText1={'github.com/vandecastro95/ben-to'}
                         
                     />
                 </Box>
@@ -63,10 +63,8 @@ const Portfolio = () => {
                     <ImageWithOverlay 
                         image={`${process.env.PUBLIC_URL}/assets/proxyStrike.jpg`}
                         mainText={"ProxyStrike"}
-                        header={"Web Development"}
-                        subtitle={"ASDADASDSADASDFASDAS"}
-                        buttonText1={"Github"}
-                        buttonText2={"Site"}
+                        header={"Web App Proxy"}
+                        subtitle={"Web Development with Html, and CSS"}
                         right
                     />
                 </Box>
@@ -77,10 +75,10 @@ const Portfolio = () => {
                             <ImageWithOverlay 
                                 image={item.photo}
                                 mainText={item.title}
-                                header={"Web Development"}
-                                subtitle={"ASDADASDSADASDFASDAS"}
-                                buttonText1={"Github"}
-                                buttonText2={"Site"}
+                                header={item.p}
+                                subtitle={item.description}
+                                buttonText1={item.github}
+                                buttonText2={item.app}
                                 right={ index % 2 == 1 }
                             />
                         </Box>

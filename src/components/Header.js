@@ -28,11 +28,11 @@ const useStyles = makeStyles({
         color: '#ffffff',
         fontWeight: '400',
         textTransform: 'capitalize',
+        textDecoration: 'none',
         letterSpacing: '0px',
         lineHeight: '1px',
         fontSize: '15px',
         transition: 'all 0.5s',
-        margin: '0 20px',
         '&:hover': {
             // color: '#DF3C3A',
             // textShadow: '2px 2px 0px #EFAE3D, 4px 4px 0px #EBF952',
@@ -55,7 +55,10 @@ const Header = () => {
                     className={classes.avatar} 
                 />
             <div item xs={12} className={classes.navContainer}>
-            <Button className={classes.nav}>About</Button> <Button className={classes.nav}>Work</Button>
+                <Button>
+                <a className={classes.nav} href="https://drive.google.com/file/d/1WOa9ALe0YOVMaGqBzhzglsvrXtElx_7a/view?usp=sharing">
+                    Resume
+                </a></Button>
             </div>
         </div>
     </Paper>
