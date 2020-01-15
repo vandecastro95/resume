@@ -22,7 +22,8 @@ const useStyles = makeStyles({
         marginLeft: '10px',
     },
     navContainer: {
-        marginTop: '20px'
+        marginTop: '20px',
+        marginRight: '80px'
     },
     nav: {
         color: '#ffffff',
@@ -54,12 +55,6 @@ const Header = () => {
                     src={avatar} 
                     className={classes.avatar} 
                 />
-            <div item xs={12} className={classes.navContainer}>
-                <Button>
-                <a className={classes.nav} href="https://drive.google.com/file/d/1WOa9ALe0YOVMaGqBzhzglsvrXtElx_7a/view?usp=sharing">
-                    Resume
-                </a></Button>
-            </div>
         </div>
     </Paper>
 )}

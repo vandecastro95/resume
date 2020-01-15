@@ -1,8 +1,9 @@
 import React from 'react';
-import { Paper, makeStyles, Grid, Typography, Avatar, Button, Icon } from '@material-ui/core'
+import { Paper, makeStyles, Grid, Typography, Avatar, Button, Icon, Tooltip } from '@material-ui/core'
 import background from '../assets/background.jpg'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import DescriptionIcon from '@material-ui/icons/Description';
 import Header from './Header'
 
 import avatar from '../assets/me.jpg';
@@ -133,6 +134,7 @@ const useStyles = makeStyles({
     links: {
         color: '#172021',
         fill: '#172021',
+        margin: '5px',
         '&:hover': {
             color: '#172021'
         },
@@ -182,18 +184,30 @@ const MainPage = () => {
             </Grid>
 
             <Grid item xs={12}>
+                <Tooltip title="LinkedIn" placement="top-end">
                 <a className={classes.links} href="https://www.linkedin.com/in/vandecastro/">
                 <Icon
                 fontSize={'large'} 
                 color={'inherit'}
                 component={LinkedInIcon} />  
                 </a>
+                </Tooltip>
+                <Tooltip title="Github" placement="top">
                 <a className={classes.links} href="https://github.com/vandecastro95">
                 <Icon
                     fontSize={'large'} 
                     color={'inherit'}
                     component={GitHubIcon} />
                 </a>
+                </Tooltip>
+                <Tooltip title="Resume" placement="top-start">
+                <a className={classes.links} href="https://drive.google.com/file/d/1WOa9ALe0YOVMaGqBzhzglsvrXtElx_7a/view?usp=sharing">
+                <Icon
+                    fontSize={'large'} 
+                    color={'inherit'}
+                    component={DescriptionIcon} />
+                </a>
+                </Tooltip>
             </Grid>
             <Grid item xs={12} className={classes.downIcon}>
                 <div mb={8} mt={6} className={classes.socialMedia}>
