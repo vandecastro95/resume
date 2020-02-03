@@ -64,7 +64,6 @@ const useStyles = makeStyles({
         textAlign: 'left',
         fontFamily: "'Lato', sans-serif",
         whiteSpace: 'pre-line',
-        fontSize: '5rem',
         marginBottom: '3rem',
         marginTop: '3rem',
         '@media (max-width:1440)': {
