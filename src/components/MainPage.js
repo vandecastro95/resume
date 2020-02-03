@@ -39,14 +39,14 @@ const useStyles = makeStyles({
         fontWeight: '500',
         verticalAlign: 'baseline',
         lineHeight: '1.6',
-        '@media (max-width:1000px)': {
-          fontSize: '13px',
-          marginTop: '10px'
-        },
         '@media (max-width:500px)': {
             fontSize: '10px',
             marginTop: '-10px'
           },
+        '@media (max-width:1000px)': {
+          fontSize: '13px',
+          marginTop: '10px'
+        }
     },
     subtitleText: {
         marginBottom: '30px',
@@ -98,7 +98,10 @@ const useStyles = makeStyles({
           marginTop: '3rem',
           marginBottom: '3rem',
           fontSize: '3.2rem',
-        }
+        },
+        '@media (min-width:1440)': {
+            fontSize: '5.8rem',
+            },
     },
     downIcon: {
         width: '100%',
@@ -137,6 +140,9 @@ const useStyles = makeStyles({
         fill: '#172021',
         margin: '5px',
         fontSize: '2rem',
+        '@media (min-width:1024)': {
+        fontSize: '3.5rem',
+        },
         '&:hover': {
             color: '#172021'
         },
