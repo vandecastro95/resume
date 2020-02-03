@@ -54,7 +54,7 @@ export default [
         description: ['React.jd, Material UI, Flexbox, Responsive Web Design, Express, Node.js, Apollo, GraphQL'],
         github: 'https://github.com/vandecastro95/news-where',
         app:'https://new-where.herokuapp.com/',
-        photo: `${process.env.PUBLIC_URL}/assets/04.jpg`
+        photo: `${process.env.PUBLIC_URL}/assets/04.png`
     },
     {
         id: '07',
