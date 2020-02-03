@@ -136,6 +136,7 @@ const useStyles = makeStyles({
         color: '#172021',
         fill: '#172021',
         margin: '5px',
+        fontSize: '2rem',
         '&:hover': {
             color: '#172021'
         },
@@ -188,7 +189,7 @@ const MainPage = () => {
                 <Tooltip title="LinkedIn" placement="top-end">
                 <a className={classes.links} href="https://www.linkedin.com/in/vandecastro/">
                 <Icon
-                fontSize={'large'} 
+                fontSize={'inherit'} 
                 color={'inherit'}
                 component={LinkedInIcon} />  
                 </a>
@@ -196,7 +197,7 @@ const MainPage = () => {
                 <Tooltip title="Github" placement="top">
                 <a className={classes.links} href="https://github.com/vandecastro95">
                 <Icon
-                    fontSize={'large'} 
+                    fontSize={'inherit'} 
                     color={'inherit'}
                     component={GitHubIcon} />
                 </a>
@@ -204,7 +205,7 @@ const MainPage = () => {
                 <Tooltip title="Resume" placement="top-start">
                 <a className={classes.links} href="https://drive.google.com/file/d/1Rz7W-oB9D8JfioZbYH3hFlLM0zyrQyq_/view?usp=sharing">
                 <Icon
-                    fontSize={'large'} 
+                    fontSize={'inherit'} 
                     color={'inherit'}
                     component={DescriptionIcon} />
                 </a>
