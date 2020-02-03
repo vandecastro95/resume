@@ -67,7 +67,7 @@ const useStyles = makeStyles({
         fontSize: '5rem',
         marginBottom: '3rem',
         marginTop: '3rem',
-        '@media (max-width:1440)': {
+        '@media (max-width:1500)': {
             marginBottom: '3rem',
             marginTop: '3rem',
             fontSize: '5.8rem',
