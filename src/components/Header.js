@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Paper, Avatar, Button } from '@material-ui/core';
+import { makeStyles, Paper, Avatar } from '@material-ui/core';
 import avatar from '../assets/me.jpg';
 
 const useStyles = makeStyles({

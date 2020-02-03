@@ -1,14 +1,11 @@
 import React from 'react';
-import { Paper, makeStyles, Grid, Typography, Avatar, Button, Icon, Tooltip } from '@material-ui/core'
-import background from '../assets/background.jpg'
+import { Paper, makeStyles, Grid, Typography, Icon, Tooltip } from '@material-ui/core'
+// import background from '../assets/background.jpg'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import DescriptionIcon from '@material-ui/icons/Description';
 import Header from './Header'
-
-import avatar from '../assets/me.jpg';
 import DownIcon from '../assets/arrow_down.png';
-import sendIcon from '../assets/send.png';
 
 const useStyles = makeStyles({
     root: { 
@@ -31,7 +28,7 @@ const useStyles = makeStyles({
          margin: '0px auto'
     },
     Header: {
-        background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${background})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
         backgroundSize: '110% auto',
         backgroundPosition: '35% 47%',
         height: '200px'
@@ -201,7 +198,7 @@ const MainPage = () => {
                 </a>
                 </Tooltip>
                 <Tooltip title="Resume" placement="top-start">
-                <a className={classes.links} href="https://drive.google.com/file/d/1WOa9ALe0YOVMaGqBzhzglsvrXtElx_7a/view?usp=sharing">
+                <a className={classes.links} href="https://drive.google.com/file/d/1Rz7W-oB9D8JfioZbYH3hFlLM0zyrQyq_/view?usp=sharing">
                 <Icon
                     fontSize={'large'} 
                     color={'inherit'}
@@ -214,7 +211,7 @@ const MainPage = () => {
                 
                 </div>
                 
-                {false && <img src={DownIcon} className={classes.downIconImg} height="30" width="30"/>}
+                {false && <img src={DownIcon} alt="down" className={classes.downIconImg} height="30" width="30"/>}
             </Grid>
         </Grid>
     </Paper>

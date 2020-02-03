@@ -236,7 +236,7 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
               <Box className={right ? classes.imagePosWrapperRight : classes.imagePosWrapperLeft}>
                   <Box className={classes.imageWrapper}>
                     <Box elevation={10} className={classes.imageMask}>
-                      <img src={image} className={classes.image}/>
+                      <img src={image} alt={mainText} className={classes.image}/>
                     </Box>
                   </Box>
               </Box>
