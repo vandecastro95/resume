@@ -67,7 +67,7 @@ const useStyles = makeStyles({
         fontSize: '5rem',
         marginBottom: '3rem',
         marginTop: '3rem',
-        '@media (max-width:1500)': {
+        '@media (min-width:1500)': {
             marginBottom: '3rem',
             marginTop: '3rem',
             fontSize: '5.8rem',
@@ -87,7 +87,7 @@ const useStyles = makeStyles({
           marginTop: '2rem',
           fontSize: '3rem',
         },
-        '@media (max-width:400px)': {
+        '@media (max-width:390px)': {
           marginBottom: '1rem',
           marginTop: '1.8rem',
           fontSize: '2.618rem',
@@ -185,7 +185,7 @@ const MainPage = () => {
         <Grid container spacing={0} className={classes.container}>
             <Grid item xs={12} className={classes.header}>
                 <Typography className={classes.headerText}>
-                    Hey, I am <br></br><a className={classes.headerName}>Van De Castro</a>{`,
+                    Hey, I am <br></br><b className={classes.headerName}>Van De Castro</b>{`,
                       —a`} <b>Software Developer</b> {`based in `}<b className={classes.shadowedText}>Austin, Texas</b>.
                     {` Specialized in `}<b>Web Development</b> and &nbsp;<b>React.js</b>
                 </Typography>
