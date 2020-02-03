@@ -240,7 +240,6 @@ const ImageWithOverlay = ({ image, mainText, header, subtitle, buttonText1, butt
                     </Box>
                   </Box>
               </Box>
-              {console.log(image)}
               <Paper elevation={10} square={true} className={right ? classes.textBoxPosWrapper : classes.textBoxPosWrapperLeft}>
                 <Grid container spacing={0}>
 
