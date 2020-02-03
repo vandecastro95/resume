@@ -20,12 +20,15 @@ const useStyles = makeStyles({
         // borderLeft: '5px solid #7fc1cc'
     },
     container: {
-            display: 'fixed',
+        display: 'fixed',
          width: '100%',
          maxWidth: '900px',
          padding: '20px',
         //  background: '#F9FBFB', 
-         margin: '0px auto'
+         margin: '0px auto',
+         '@media (max-width:768px)': {
+           maxWidth: '600px'
+         }
     },
     Header: {
         background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
@@ -39,14 +42,18 @@ const useStyles = makeStyles({
         fontWeight: '500',
         verticalAlign: 'baseline',
         lineHeight: '1.6',
+        '@media (max-width:1000px)': {
+          fontSize: '13px',
+          marginTop: '10px'
+        },
         '@media (max-width:500px)': {
             fontSize: '10px',
             marginTop: '-10px'
           },
-        '@media (max-width:1000px)': {
-          fontSize: '13px',
-          marginTop: '10px'
-        }
+          '@media (max-width:320px)': {
+            fontSize: '11px',
+            marginTop: '10px'
+          },
     },
     subtitleText: {
         marginBottom: '30px',
@@ -57,10 +64,34 @@ const useStyles = makeStyles({
         textAlign: 'left',
         fontFamily: "'Lato', sans-serif",
         whiteSpace: 'pre-line',
-        '@media (min-width:600px)': {
-          fontSize: '4.5rem',
-          padding: '40px 30px',
+        fontSize: '5rem',
+        marginBottom: '3rem',
+        marginTop: '3rem',
+        '@media (max-width:1440)': {
+            marginBottom: '3rem',
+            marginTop: '3rem',
+            fontSize: '5.8rem',
+            },
+        '@media (max-width:1000px)': {
+            marginBottom: '3rem',
+            marginTop: '3rem',
+            fontSize: '4rem',
         },
+        '@media (max-width:768px)': {
+          marginBottom: '3rem',
+          marginTop: '1.8rem',
+          fontSize: '3.8rem',
+        },
+        '@media (max-width:500px)': {
+          marginBottom: '2rem',
+          marginTop: '2rem',
+          fontSize: '3rem',
+        },
+        '@media (max-width:400px)': {
+          marginBottom: '1rem',
+          marginTop: '1.8rem',
+          fontSize: '2.618rem',
+        }
     },
     headerName: {
         color: '#DF3C3A', 
@@ -86,28 +117,17 @@ const useStyles = makeStyles({
     },
     headerText: {
         fontFamily: `'Bebas Neue', sans-serif`,
-        fontSize: '4.8rem',
+        fontSize: 'inherit',
         letterSpacing: '.5',
         lineHeight: '1',
         fontWeight: '700',
-        textAlign: 'right',
-        '@media (max-width:1000px)': {
-          fontSize: '4rem',
-        },
-        '@media (max-width:800px)': {
-          marginTop: '3rem',
-          marginBottom: '3rem',
-          fontSize: '3.2rem',
-        },
-        '@media (min-width:1440)': {
-            fontSize: '5.8rem',
-            },
+        textAlign: 'right'
     },
     downIcon: {
         width: '100%',
         maxWidth: '900px',
         marginTop: '20px',
-        marginBottom: '20px'
+        marginBottom: '20px',
     },
     downIconImg: {
         imageRendering: 'auto',
@@ -165,7 +185,7 @@ const MainPage = () => {
         <Grid container spacing={0} className={classes.container}>
             <Grid item xs={12} className={classes.header}>
                 <Typography className={classes.headerText}>
-                    Hey, I am <a className={classes.headerName}>Van De Castro</a>{`,
+                    Hey, I am <br></br><a className={classes.headerName}>Van De Castro</a>{`,
                       —a`} <b>Software Developer</b> {`based in `}<b className={classes.shadowedText}>Austin, Texas</b>.
                     {` Specialized in `}<b>Web Development</b> and &nbsp;<b>React.js</b>
                 </Typography>
