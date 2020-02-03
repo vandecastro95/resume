@@ -43,6 +43,10 @@ const useStyles = makeStyles({
           fontSize: '13px',
           marginTop: '10px'
         },
+        '@media (max-width:500px)': {
+            fontSize: '10px',
+            marginTop: '-10px'
+          },
     },
     subtitleText: {
         marginBottom: '30px',
@@ -94,7 +98,7 @@ const useStyles = makeStyles({
           marginTop: '3rem',
           marginBottom: '3rem',
           fontSize: '3.2rem',
-        },
+        }
     },
     downIcon: {
         width: '100%',
